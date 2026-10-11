@@ -55,3 +55,7 @@ To do → In progress → Review → Done. Put blockers in the task evidence col
 | R18 | Rice | Assess regression and time-series feasibility | To do | Medium | Time-aware predictors, suitable horizon and held-out validation |
 | H11 | Mango | Profile clean Mango data and choose mining methods | Blocked | High | Await dataset; evaluate clustering versus regression based on evidence |
 | G05 | Shared | Specify final model selection and leakage/evaluation controls | To do | High | Clear pre-specified metrics and validation |
+
+| R19 | Rice | Verify all normalized 2016–2026 annual source workbooks | In progress | High | 22 files inventoried, 2016/2024/2025/2026 examples checked; full schema/coverage audit remains |
+| R20 | Rice | Exclude regional/provincial totals and resolve extra 2026 tabs | To do | High | Consistent municipality-year-month rows, no duplicates |
+| R21 | Rice | Cross-check area planted, harvested, production and yield computations | To do | High | Per-source definitions, plausibility and arithmetic verified |
