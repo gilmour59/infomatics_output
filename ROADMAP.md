@@ -8,7 +8,8 @@
 ## Stage 1 — Evidence-based dataset selection (in progress)
 - [x] Inventory top-level Rice and HVC Drive folders.
 - [x] Inspect selected native Sheets' tab layouts and sample values.
-- [ ] Inspect Rice subfolders, historical coverage, completeness, granularity and definitions.
+- [x] Inventory Rice immediate subfolders and nested-category names; initial annual source files located.
+- [ ] Profile historical coverage, completeness, granularity and definitions of selected Rice datasets.
 - [ ] Inspect HVC 2025 Excel workbook and fully decode 2024/2026 hierarchical column headings.
 - [ ] Profile missingness, duplicates, invalid quantities, units, geographic/year coverage.
 - [ ] Confirm source permission and permitted use in coursework.
