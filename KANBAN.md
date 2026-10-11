@@ -8,7 +8,7 @@ Status as of 2026-10-11. Mark tasks individually when evidence is verified.
 | G02 | Shared | Maintain CRISP-DM mapping templates | To do | High | Each phase has activity, output, owner |
 | R01 | Rice | Inventory top-level Drive folder | Done | High | Top-level datasets identified |
 | R02 | Rice | Inspect normalized monthly/seasonal and PSA source structure | In progress | High | Tab headings and grain verified |
-| R03 | Rice | Review supplementary subfolders and disaster/seed/budget datasets | To do | Medium | Access/variable/coverage matrix |
+| R03 | Rice | Review supplementary subfolders and disaster/seed/budget datasets | In progress | Medium | Access/variable/coverage matrix |
 | R04 | Rice | Check 2026 partial-year status and source consistency | To do | High | Comparable time windows validated |
 | R05 | Rice | Recommend objective and mining task | To do | High | Supported by quality-profile evidence |
 | H01 | HVC | Inventory 2024–2026 workbooks | Done | High | Three files located |
