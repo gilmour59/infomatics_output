@@ -78,3 +78,9 @@ Dates and responsible members should be filled in when the submission date and t
 - [x] Inspect specified 2016–2026 normalized planting and harvest directories; confirm 22 annual workbooks, municipal columns and cross-year sample schema.
 - [ ] Validate all year/month tabs (especially additional 2026 revision-looking tabs), explicit municipality-only extraction, reconciled irrigation/seed definitions, and 2026 partial-year status.
 - [ ] Validate formulas and sample value consistency before creating immutable analytical exports of the appropriate working copies.
+
+## Working copy milestone — 2026-10-11
+- [x] Identify hidden 2026 planting extra tabs: Mar1, Mar2, March1, September1. Exclude from analyses; retain in unmodified workbook copies.
+- [x] Create all 22 normalized yearly planting and harvest working copies in Drive folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKENb_uoND6
+- [ ] Complete formula-reference audit over all tabs (only representative samples audited so far).
+- [ ] Generate validated municipality-only value extracts without modifying any copied source sheets; check totals, duplicate reports and incomplete 2026 months.
