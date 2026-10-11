@@ -42,3 +42,16 @@ To do → In progress → Review → Done. Put blockers in the task evidence col
 | R11 | Rice | Create safe working copies of selected initial source workbooks | Done | High | Three copies in dedicated Drive folder, originals untouched |
 | R12 | Rice | Inspect links/formulas and copy underlying operational fact tables if required | To do | High | Self-contained, verified observation-level working data |
 | H10 | HVC | Receive and profile clean Mango dataset | Blocked | High | Await user-supplied dataset and verify unit of analysis and task |
+
+## Explicit technique and dependency cards (2026-10-11)
+
+| ID | Track | Task | Status | Priority | Exit criteria |
+|---|---|---|---|---|---|
+| R13 | Rice | Profile municipality-level normalized planting and harvest 2016-2026 | In progress | High | Confirm municipality-month-year grain, irrigation/seed fields and usable observations |
+| R14 | Rice | Fully audit copied workbook formula and external references | In progress | High | Monthly summary IMPORTRANGE confirmed; trace links/errors and validate frozen values |
+| R15 | Rice | Copy selected municipality-level raw reporting sheets to working Drive folder | To do | High | Working copies only; extract independent validated analytical values |
+| R16 | Rice | Evaluate K-Means vs hierarchical/DBSCAN clustering | To do | High | Feature set, baseline, silhouette, stability and expert interpretation |
+| R17 | Rice | Evaluate Isolation Forest anomaly detection | To do | Medium | Seasonality adjusted, expert-validated abnormal patterns |
+| R18 | Rice | Assess regression and time-series feasibility | To do | Medium | Time-aware predictors, suitable horizon and held-out validation |
+| H11 | Mango | Profile clean Mango data and choose mining methods | Blocked | High | Await dataset; evaluate clustering versus regression based on evidence |
+| G05 | Shared | Specify final model selection and leakage/evaluation controls | To do | High | Clear pre-specified metrics and validation |
