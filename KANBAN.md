@@ -59,3 +59,10 @@ To do → In progress → Review → Done. Put blockers in the task evidence col
 | R19 | Rice | Verify all normalized 2016–2026 annual source workbooks | In progress | High | 22 files inventoried, 2016/2024/2025/2026 examples checked; full schema/coverage audit remains |
 | R20 | Rice | Exclude regional/provincial totals and resolve extra 2026 tabs | To do | High | Consistent municipality-year-month rows, no duplicates |
 | R21 | Rice | Cross-check area planted, harvested, production and yield computations | To do | High | Per-source definitions, plausibility and arithmetic verified |
+
+## 2026-10-11 Working-copy and hidden-tab update
+- R15: **Done** — copied all 22 municipality-level yearly normalized Rice workbooks (11 planting + 11 harvesting, 2016–2026) into the separate Google Drive working folder. Originals unchanged.
+- R14: **In progress** — checked representative formula cells (2016, 2025, 2026), no external link found in these samples; full file-by-file formula audit remains open. Do NOT mark source snapshots as verified self-contained yet.
+- R20: **In progress** — 2026 Planting extra tabs Mar1, Mar2, March1, September1 are all hidden and must be excluded from analytical extraction. Regular months and Annual 2026 are visible.
+- New R22: **To do** — Verify formula references and calculation errors across all monthly + annual tabs of 22 copied workbooks; classify reference types and log exceptions.
+- New R23: **To do** — Derive separate municipality-only value extracts, handle aggregate rows, and validate source/copy equivalence before modeling.
