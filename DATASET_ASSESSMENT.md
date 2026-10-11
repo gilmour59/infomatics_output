@@ -66,3 +66,10 @@ Working folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKE
 - Copied seasonal summary sample A1:K8 has CONCATENATE formulas; full audit pending.
 - Copied PSA annual sample A1:M12 uses internal Panay Island (Quarterly) worksheet references; full audit pending.
 - Keep sources read-only, preserve formulas in source copies, and derive value-only analysis tables after provenance and reconciliation checks.
+
+## Direct normalized folders confirmed (2026-10-11)
+- Planting: https://drive.google.com/drive/folders/1CvizHCIClkHkMf4pVYSDCGv8ElNg8Uy2 — 11 yearly Google Sheets, 2016–2026. Sampled 2016/2024/2026 month tabs ~114×37, region/province/municipality, irrigation, seed class, area planted (ha).
+- Harvest: https://drive.google.com/drive/folders/1xbwS5Jc-itN_65YRB1U41mxk0pkuJq_X — 11 yearly Google Sheets, 2016–2026. Sampled 2016/2024/2026 month tabs ~113×91, region/province/municipality, irrigation/seed category, harvested area, yield MT/ha, production MT.
+- Both mix regional/provincial totals with municipality rows. 2026 planting contains extra tabs named Mar1, Mar2, March1; exclude until validated.
+- Sample structures are broadly compatible but do not prove full year-level schema or source-quality consistency; 2026 annual data is incomplete until established otherwise.
+- Recommended analysis grain: municipality × month × year, with explicit irrigation/seed definitions; possible mining tasks clustering, anomaly detection, and supervised tasks only after confirming valid target/independent predictors.
