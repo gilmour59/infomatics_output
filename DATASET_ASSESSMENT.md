@@ -56,3 +56,13 @@ Working folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKE
 | 1V2Xt-4Zxho_gVKx9GqzJj_h7a6hWjYVNJeYAL1N4-_I | PSA Annual Production Harvested Western Visayas | 11_gqRmervJAk5CT9bTbPrLuRJRWgAwVPMPDc2GHqGhI | Independent reference |
 
 **Caution:** The monthly and season-level workbooks contain indexes or summaries and external/source links; investigate whether actual LGU observation-level records must be copied separately. Google Sheets copies may retain formulas linking to sources. Original datasets were not edited.
+
+## Nested normalized files / sample formula audit — 2026-10-11
+- Planting and harvesting NORMALIZED subdirectories contain annual workbooks for 2016–2026.
+- Sample **Annual Planting 2025** has month tabs; January contains 114 rows and 37 columns, region/province/municipality and irrigated/rainfed area-planted fields by seed category.
+- Sample **Harvest and Production 2025** has month tabs; January contains 113 rows and 91 columns, region/province/municipality, harvested area, yield and production by seed category.
+- Both contain aggregate rows alongside municipality rows; filter explicitly to the chosen observation grain.
+- Copied monthly summary contains IMPORTRANGE dependencies (sample: NORMALIZED A1:BA7): NOT fully self-contained.
+- Copied seasonal summary sample A1:K8 has CONCATENATE formulas; full audit pending.
+- Copied PSA annual sample A1:M12 uses internal Panay Island (Quarterly) worksheet references; full audit pending.
+- Keep sources read-only, preserve formulas in source copies, and derive value-only analysis tables after provenance and reconciliation checks.
