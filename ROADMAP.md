@@ -65,3 +65,12 @@ Dates and responsible members should be filled in when the submission date and t
 - [x] Create separate Rice working-copy folder and copy three initial LGU–DA / PSA candidate Sheets without editing original data.
 - [ ] Check copied summary/index workbooks for linked external sources and obtain independent working copies of any necessary underlying LGU records.
 - [ ] Assess clean Mango dataset when supplied; prefer evidence-based technique selection rather than a predetermined algorithm or class-reporting topic.
+
+## Updated source and technique milestones (2026-10-11)
+- [x] Inspect deeper normalized annual folders, containing 2016–2026 files; inspect sample municipality-level planting and harvest worksheets for 2025.
+- [x] Detect external IMPORTRANGE formulas in copied monthly summary; detect internal tab references in PSA annual copy.
+- [ ] Audit complete workbook formula dependencies and external-source status before editing/preparing data.
+- [ ] Copy selected municipality-level operational fact files as source-preserving working copies and derive verified standalone analytical extracts.
+- [ ] Assess K-Means vs hierarchical/DBSCAN as candidate Rice clustering methods, Isolation Forest as supporting method; examine regression/forecasting only if justified.
+- [ ] Assess clean Mango dataset upon upload and choose independent, suitable mining task.
+- [ ] Predefine baseline models, metrics and temporal/geographic validation before experimentation.
