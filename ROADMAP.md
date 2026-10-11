@@ -69,18 +69,25 @@ Dates and responsible members should be filled in when the submission date and t
 ## Updated source and technique milestones (2026-10-11)
 - [x] Inspect deeper normalized annual folders, containing 2016–2026 files; inspect sample municipality-level planting and harvest worksheets for 2025.
 - [x] Detect external IMPORTRANGE formulas in copied monthly summary; detect internal tab references in PSA annual copy.
-- [ ] Audit complete workbook formula dependencies and external-source status before editing/preparing data.
-- [ ] Copy selected municipality-level operational fact files as source-preserving working copies and derive verified standalone analytical extracts.
+- [x] Audit visible-tab formula dependencies and external-source status before extraction; 2026 source dependencies remain flagged.
+- [x] Copy municipality-level operational workbooks and derive value-only analytical extracts in Drive.
 - [ ] Assess K-Means vs hierarchical/DBSCAN as candidate Rice clustering methods, Isolation Forest as supporting method; examine regression/forecasting only if justified.
 - [ ] Assess clean Mango dataset upon upload and choose independent, suitable mining task.
 - [ ] Predefine baseline models, metrics and temporal/geographic validation before experimentation.
 
 - [x] Inspect specified 2016–2026 normalized planting and harvest directories; confirm 22 annual workbooks, municipal columns and cross-year sample schema.
-- [ ] Validate all year/month tabs (especially additional 2026 revision-looking tabs), explicit municipality-only extraction, reconciled irrigation/seed definitions, and 2026 partial-year status.
-- [ ] Validate formulas and sample value consistency before creating immutable analytical exports of the appropriate working copies.
+- [x] Validate visible monthly tabs, municipality-only total-field extraction, and 2026 partial-year status; irrigation/seed subgroup reconciliation remains future work.
+- [x] Validate visible-tab formulas, errors, keys, and total-yield arithmetic before value-only analytical export.
 
 ## Working copy milestone — 2026-10-11
 - [x] Identify hidden 2026 planting extra tabs: Mar1, Mar2, March1, September1. Exclude from analyses; retain in unmodified workbook copies.
 - [x] Create all 22 normalized yearly planting and harvest working copies in Drive folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKENb_uoND6
-- [ ] Complete formula-reference audit over all tabs (only representative samples audited so far).
-- [ ] Generate validated municipality-only value extracts without modifying any copied source sheets; check totals, duplicate reports and incomplete 2026 months.
+- [x] Audit formulas and calculated errors across every visible tab of all 22 annual copies; 2026 external imports documented separately.
+- [x] Generate municipality-only value extracts and 2016–2025 panel; check keys, missingness, yield arithmetic and 2026 incompleteness.
+
+## Rice analytical dataset milestone — 2026-10-11
+- [x] Audit 22 copied annual workbooks across all visible tabs: 190,302 formula cells, zero calculated error cells; 168 external-import formulas confined to 2026 (132 planting, 36 harvest). Hidden tabs excluded.
+- [x] Create the 2016–2025 municipality × month × year value-only panel: 12,120 rows, 101 geocoded municipalities, 10 years. Maintain a separate 2026 panel (1,212 calendar slots; October sparse, November–December empty).
+- [x] Preserve reproducibility with 22 compact source extracts, source cell lineage, rebuild script, audit JSON and quality checks in [private Drive derived folder](https://drive.google.com/drive/folders/1_oB4m_owiN9mxPlZMNsTacd-dVbu7mI_).
+- [ ] Review six planted-area/physical-area exceedances and the consistent Sapian/Sapi-An spelling difference with a domain owner. Do not alter reported values without an approved rule.
+- [ ] Choose and validate the mining task using the completed panel: season-aware municipality clustering is a candidate; anomaly screening and forecasting need missingness and temporal validation controls. Keep PSA as a separate statistical reference.
