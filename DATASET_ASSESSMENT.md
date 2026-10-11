@@ -45,3 +45,14 @@ https://drive.google.com/drive/folders/1WL307G7M2ARRC55f3_OlXOUdiRqN4_6Q
 
 ## Follow-up inventory (2026-10-11)
 Immediate Rice subfolders examined: Sufficiency Level contains two PSA Excel files (WV 2018–2025, Panay 2018–2026); Annual Planting contains 2016–2025 yearly Sheets and seasonal subfolder; Annual Harvest and Production contains 2016–2025 yearly Sheets and seasonal subfolder; normalized Planting and Harvest/Production groups each contain three deeper folders (season, quarterly/semester/annual, monthly/annual); Cost Structure contains regional 2025 and six provincial Excel workbooks. These are filename/metadata observations, not verified row-level suitability.
+
+## Rice working copies created — 2026-10-11
+Working folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKENb_uoND6
+
+| Source ID | Working copy | Working ID | Role |
+|---|---|---|---|
+| 1KXZ8SnlwLq_vAVh2cOnxeuONZHYKFDWWPqzh5nQL838 | LGU DA Monthly Planting Harvest Yield | 12vUzNBnU0CzGsp_DjThjog-g57T_1oTWfBxJRiwZaUc | Candidate operational primary |
+| 1R0t4rbQexbLnhHyX6sODcNKZMeRAoeH7hCBSew43RYM | LGU DA Per Season Planting Harvest Production | 1n_L0ePHdi3h-ZRmzH1rIkaelG_d5aFcip2zs1PJcO8E | Candidate seasonal supplement |
+| 1V2Xt-4Zxho_gVKx9GqzJj_h7a6hWjYVNJeYAL1N4-_I | PSA Annual Production Harvested Western Visayas | 11_gqRmervJAk5CT9bTbPrLuRJRWgAwVPMPDc2GHqGhI | Independent reference |
+
+**Caution:** The monthly and season-level workbooks contain indexes or summaries and external/source links; investigate whether actual LGU observation-level records must be copied separately. Google Sheets copies may retain formulas linking to sources. Original datasets were not edited.
