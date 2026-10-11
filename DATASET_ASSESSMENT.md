@@ -73,3 +73,9 @@ Working folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKE
 - Both mix regional/provincial totals with municipality rows. 2026 planting contains extra tabs named Mar1, Mar2, March1; exclude until validated.
 - Sample structures are broadly compatible but do not prove full year-level schema or source-quality consistency; 2026 annual data is incomplete until established otherwise.
 - Recommended analysis grain: municipality × month × year, with explicit irrigation/seed definitions; possible mining tasks clustering, anomaly detection, and supervised tasks only after confirming valid target/independent predictors.
+
+## Working folder verification and formula-audit scope (2026-10-11)
+Folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKENb_uoND6
+Contains **25 files**: 11 copied normalized planting annual books + 11 copied normalized harvest/production annual books (2016–2026), plus 3 earlier summary/reference copies.
+2026 planting extra tabs Mar1, Mar2, March1, September1 explicitly have hidden=true; exclude them from analytical processing, do not delete them from workbook copies.
+Representative January sampled formula checks for 2016, 2025 and 2026 show within-sheet sum and ratio calculations (not a full formula audit). Original summary copy separately contains IMPORTRANGE external dependencies. The 22 normalized copies are **working source copies, not certified standalone feature tables**. Full monthly/annual formula and error audit, cross-year checks, and value-only extracts are pending.
