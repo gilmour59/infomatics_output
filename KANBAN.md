@@ -38,3 +38,7 @@ To do → In progress → Review → Done. Put blockers in the task evidence col
 | G03 | Shared | Confirm permission, confidentiality and public repo policy | To do | High | Only safe metadata/code/proposal text committed |
 | G04 | Shared | Define baseline, validation, metrics and leakage safeguards | To do | High | Pre-specified independently for both tracks |
 | P03 | Shared | Perform two separate rubric and checklist reviews | To do | High | Each proposal scores against all five rubric categories and 16 checklist items |
+
+| R11 | Rice | Create safe working copies of selected initial source workbooks | Done | High | Three copies in dedicated Drive folder, originals untouched |
+| R12 | Rice | Inspect links/formulas and copy underlying operational fact tables if required | To do | High | Self-contained, verified observation-level working data |
+| H10 | HVC | Receive and profile clean Mango dataset | Blocked | High | Await user-supplied dataset and verify unit of analysis and task |
