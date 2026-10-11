@@ -42,3 +42,6 @@ https://drive.google.com/drive/folders/1WL307G7M2ARRC55f3_OlXOUdiRqN4_6Q
 - Confirm institutional permission before sharing any derivative outputs.
 - Data discrepancies and unsupported claims stay flagged, not silently repaired.
 - Model selection, metrics and minimum thresholds will be set before final model evaluation.
+
+## Follow-up inventory (2026-10-11)
+Immediate Rice subfolders examined: Sufficiency Level contains two PSA Excel files (WV 2018–2025, Panay 2018–2026); Annual Planting contains 2016–2025 yearly Sheets and seasonal subfolder; Annual Harvest and Production contains 2016–2025 yearly Sheets and seasonal subfolder; normalized Planting and Harvest/Production groups each contain three deeper folders (season, quarterly/semester/annual, monthly/annual); Cost Structure contains regional 2025 and six provincial Excel workbooks. These are filename/metadata observations, not verified row-level suitability.
