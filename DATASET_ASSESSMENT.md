@@ -1,6 +1,6 @@
 # Dataset Inventory and Preliminary Feasibility — 2026-10-11
 
-**Status:** Initial inventory and selected native Google Sheets metadata/sample-row inspection only; not a complete statistical data audit. Source folders are read-only.
+**Status:** Historical preliminary inventory retained below; a complete visible-tab audit and municipality-month extract is documented in the final section. Source folders and copied source spreadsheets remain unchanged.
 
 ## Rice — source folder
 https://drive.google.com/drive/folders/1LoTjXaEkn69dNkXF-kReowymCqu7T7PB
@@ -79,3 +79,17 @@ Folder: https://drive.google.com/drive/folders/1yXA352DCIfh39P6nXvECDyKENb_uoND6
 Contains **25 files**: 11 copied normalized planting annual books + 11 copied normalized harvest/production annual books (2016–2026), plus 3 earlier summary/reference copies.
 2026 planting extra tabs Mar1, Mar2, March1, September1 explicitly have hidden=true; exclude them from analytical processing, do not delete them from workbook copies.
 Representative January sampled formula checks for 2016, 2025 and 2026 show within-sheet sum and ratio calculations (not a full formula audit). Original summary copy separately contains IMPORTRANGE external dependencies. The 22 normalized copies are **working source copies, not certified standalone feature tables**. Full monthly/annual formula and error audit, cross-year checks, and value-only extracts are pending.
+
+## Completed normalized Rice audit and analytical panel — 2026-10-11
+
+**Derived Drive folder:** https://drive.google.com/drive/folders/1_oB4m_owiN9mxPlZMNsTacd-dVbu7mI_
+
+The 22 copied annual planting and harvest/production Google Sheets (2016–2026) were audited cell by cell across every **visible** tab. There are 190,302 formula cells and no calculated spreadsheet error cells in that scope. No external-reference formula was detected in the 2016–2025 visible tabs. The two 2026 copies have 168 external-import formulas (132 planting, 36 harvest), all pointing to another operational spreadsheet; 2026 is therefore a separate, dependency-bearing snapshot. Hidden annual tabs in some years and the four extra hidden 2026 planting tabs were excluded from extraction and from the formula-audit scope. Formula counts and examples for each workbook are in the private Drive reproducibility package.
+
+The value-only 2016–2025 panel has **12,120 unique municipality × month × year rows**: 101 geocoded municipalities, five provinces, 12 months, and 10 years. Source row and workbook identifiers accompany every record. A separate 2026 CSV has 1,212 calendar slots. Its October totals are sparse and November–December totals empty as of the extraction; do not compare it as a complete annual observation. Regional/provincial aggregate rows and annual summary tabs were excluded. The stable monthly source columns used are planting total all ecosystems (AF), rice physical area (AG), harvest total palay area (CJ), total production (CL), and reported yield (CK). Seed and ecosystem subtotals were not added to these totals.
+
+Historical missingness: 2,595 / 12,120 planted-area cells and 2,658 / 12,120 harvested-area, production, and reported-yield cells are blank. Blanks were preserved, not filled with zero. Both source families have the same municipality-month keys, no duplicate keys, and no negative values in the selected measures. For present positive harvested area, production / area matches reported yield within 0.02 MT/ha. Six historical municipality-months have planted area exceeding the source's rice physical-area field; retained and flagged for domain review. The spelling Sapian (planting) versus Sapi-An (harvest) differs for one shared geocode in each month, but the geocode and province agree.
+
+**Technique feasibility:** Descriptive seasonal/geographic profiling is immediately feasible. Clustering municipalities is feasible after coverage-aware seasonal or annual feature construction, scaling, and stability review; K-means and hierarchical methods are reasonable first comparisons. Anomaly detection is a screening method requiring seasonal adjustment and source follow-up. Forecasting/regression remains conditional because the panel has substantial blanks and crop timing differs between planting and harvest; use chronological holdouts and simple seasonal baselines. No claim of causal effects or PSA-LGU equivalence follows from this panel. PSA is a separate independent reference, not merged into the operational rows.
+
+The package in Drive contains the two CSV panels, 22 value-only source extracts, a standard-library Python rebuild script, `formula_audit.json`, `data_quality.json`, and an explanatory README. None of the row-level operational data was added to this public GitHub repository. Byte-for-byte equivalence of each working copy to its original source was not independently verified, and source-level 2026 external dependencies remain open.
