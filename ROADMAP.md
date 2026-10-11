@@ -60,3 +60,8 @@ Dates and responsible members should be filled in when the submission date and t
 - [ ] Document source-level limitations, publication/access permissions, data dictionary and at least five meaningful exploratory views per proposal.
 - [ ] Fix evaluation measures and train/test strategy before fitting models; guard against time/geography leakage, and do not report proposal-stage hypothetical results as findings.
 - [ ] Keep two distinct proposals, their narratives, tables, IEEE sources and independent rubric checks; keep Drive read-only and raw/sensitive data out of public GitHub.
+
+## Updated dataset decisions — 2026-10-11
+- [x] Create separate Rice working-copy folder and copy three initial LGU–DA / PSA candidate Sheets without editing original data.
+- [ ] Check copied summary/index workbooks for linked external sources and obtain independent working copies of any necessary underlying LGU records.
+- [ ] Assess clean Mango dataset when supplied; prefer evidence-based technique selection rather than a predetermined algorithm or class-reporting topic.
