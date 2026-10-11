@@ -9,7 +9,7 @@ Status as of 2026-10-11. Mark tasks individually when evidence is verified.
 | R01 | Rice | Inventory top-level Drive folder | Done | High | Top-level datasets identified |
 | R02 | Rice | Inspect normalized monthly/seasonal and PSA source structure | In progress | High | Tab headings and grain verified |
 | R03 | Rice | Review supplementary subfolders and disaster/seed/budget datasets | In progress | Medium | Access/variable/coverage matrix |
-| R04 | Rice | Check 2026 partial-year status and source consistency | To do | High | Comparable time windows validated |
+| R04 | Rice | Check 2026 partial-year status and source consistency | Done | High | Comparable time windows validated |
 | R05 | Rice | Recommend objective and mining task | To do | High | Supported by quality-profile evidence |
 | H01 | HVC | Inventory 2024–2026 workbooks | Done | High | Three files located |
 | H02 | HVC | Compare hierarchical 2024–2026 schemas | In progress | High | Verified canonical field mapping |
@@ -40,15 +40,15 @@ To do → In progress → Review → Done. Put blockers in the task evidence col
 | P03 | Shared | Perform two separate rubric and checklist reviews | To do | High | Each proposal scores against all five rubric categories and 16 checklist items |
 
 | R11 | Rice | Create safe working copies of selected initial source workbooks | Done | High | Three copies in dedicated Drive folder, originals untouched |
-| R12 | Rice | Inspect links/formulas and copy underlying operational fact tables if required | To do | High | Self-contained, verified observation-level working data |
+| R12 | Rice | Inspect links/formulas and copy underlying operational fact tables if required | Done | High | Self-contained, verified observation-level working data |
 | H10 | HVC | Receive and profile clean Mango dataset | Blocked | High | Await user-supplied dataset and verify unit of analysis and task |
 
 ## Explicit technique and dependency cards (2026-10-11)
 
 | ID | Track | Task | Status | Priority | Exit criteria |
 |---|---|---|---|---|---|
-| R13 | Rice | Profile municipality-level normalized planting and harvest 2016-2026 | In progress | High | Confirm municipality-month-year grain, irrigation/seed fields and usable observations |
-| R14 | Rice | Fully audit copied workbook formula and external references | In progress | High | Monthly summary IMPORTRANGE confirmed; trace links/errors and validate frozen values |
+| R13 | Rice | Profile municipality-level normalized planting and harvest 2016-2026 | Done | High | Confirm municipality-month-year grain, irrigation/seed fields and usable observations |
+| R14 | Rice | Fully audit copied workbook formula and external references | Done | High | Monthly summary IMPORTRANGE confirmed; trace links/errors and validate frozen values |
 | R15 | Rice | Copy selected municipality-level raw reporting sheets to working Drive folder | To do | High | Working copies only; extract independent validated analytical values |
 | R16 | Rice | Evaluate K-Means vs hierarchical/DBSCAN clustering | To do | High | Feature set, baseline, silhouette, stability and expert interpretation |
 | R17 | Rice | Evaluate Isolation Forest anomaly detection | To do | Medium | Seasonality adjusted, expert-validated abnormal patterns |
@@ -56,13 +56,24 @@ To do → In progress → Review → Done. Put blockers in the task evidence col
 | H11 | Mango | Profile clean Mango data and choose mining methods | Blocked | High | Await dataset; evaluate clustering versus regression based on evidence |
 | G05 | Shared | Specify final model selection and leakage/evaluation controls | To do | High | Clear pre-specified metrics and validation |
 
-| R19 | Rice | Verify all normalized 2016–2026 annual source workbooks | In progress | High | 22 files inventoried, 2016/2024/2025/2026 examples checked; full schema/coverage audit remains |
-| R20 | Rice | Exclude regional/provincial totals and resolve extra 2026 tabs | To do | High | Consistent municipality-year-month rows, no duplicates |
-| R21 | Rice | Cross-check area planted, harvested, production and yield computations | To do | High | Per-source definitions, plausibility and arithmetic verified |
+| R19 | Rice | Verify all normalized 2016–2026 annual source workbooks | Done | High | 22 files inventoried, 2016/2024/2025/2026 examples checked; full schema/coverage audit remains |
+| R20 | Rice | Exclude regional/provincial totals and resolve extra 2026 tabs | Done | High | Consistent municipality-year-month rows, no duplicates |
+| R21 | Rice | Cross-check area planted, harvested, production and yield computations | Done | High | Per-source definitions, plausibility and arithmetic verified |
 
 ## 2026-10-11 Working-copy and hidden-tab update
 - R15: **Done** — copied all 22 municipality-level yearly normalized Rice workbooks (11 planting + 11 harvesting, 2016–2026) into the separate Google Drive working folder. Originals unchanged.
-- R14: **In progress** — checked representative formula cells (2016, 2025, 2026), no external link found in these samples; full file-by-file formula audit remains open. Do NOT mark source snapshots as verified self-contained yet.
-- R20: **In progress** — 2026 Planting extra tabs Mar1, Mar2, March1, September1 are all hidden and must be excluded from analytical extraction. Regular months and Annual 2026 are visible.
-- New R22: **To do** — Verify formula references and calculation errors across all monthly + annual tabs of 22 copied workbooks; classify reference types and log exceptions.
-- New R23: **To do** — Derive separate municipality-only value extracts, handle aggregate rows, and validate source/copy equivalence before modeling.
+- R14: **Done for visible tabs** — scanned all 22 annual copies. 2026 has 168 external import formulas; 2016–2025 has none detected. Source snapshots for 2026 remain dependency-bearing.
+- R20: **Done** — excluded all hidden tabs and annual/aggregate rows from the municipality-month panel; 2026 extras remain untouched.
+- R22: **Done for visible tabs** — audited 190,302 formulas and all calculated cells; zero errors, 168 external imports in 2026 only. Hidden tabs intentionally excluded.
+- R23: **Done for extracts and aggregate handling** — 2016–2025 panel and separate 2026 snapshot delivered in Drive with lineage and reproducibility package. Original-to-copy equivalence was not checked byte for byte.
+
+## Derived Rice dataset status — 2026-10-11
+
+| ID | Track | Task | Status | Priority | Evidence / exit criteria |
+|---|---|---|---|---|---|
+| R22 | Rice | Visible-tab formula and calculated-error audit of 22 copies | Done | High | 190,302 formulas; 0 calculated errors; 168 external imports only in 2026; hidden tabs excluded |
+| R23 | Rice | Municipality-only value extracts and joined panel | Done | High | 12,120 historical rows; 101 municipalities; no duplicate keys; separate 2026 snapshot; [Drive deliverables](https://drive.google.com/drive/folders/1_oB4m_owiN9mxPlZMNsTacd-dVbu7mI_) |
+| R24 | Rice | Review six planted-area exceedances and Sapian spelling | Review | Medium | Domain owner validates without silently changing source values |
+| R25 | Rice | Select and evaluate a defensible mining method | To do | High | Seasonal coverage treatment, simple baseline, stability and temporal validation |
+
+No operational CSVs or row-level extracts are stored in this public repository.
