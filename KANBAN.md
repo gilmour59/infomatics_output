@@ -21,3 +21,20 @@ Status as of 2026-10-11. Mark tasks individually when evidence is verified.
 
 ## Workflow
 To do → In progress → Review → Done. Put blockers in the task evidence column or open a GitHub Issue. No dataset modifications in Drive; no raw dataset commits in this public repository.
+
+## Recommendation-specific cards (research gates)
+
+| ID | Track | Task | Status | Priority | Evidence / exit criteria |
+|---|---|---|---|---|---|
+| R06 | Rice | Profile PSA annual data as primary candidate | To do | High | Year/province coverage, variable types, missingness, outlier and aggregate checks |
+| R07 | Rice | Verify annual versus partial 2026 values | To do | High | Comparable reporting window documented |
+| R08 | Rice | Reconcile PSA, monthly and seasonal grain/definitions | To do | High | Join feasibility, duplicate prevention and unit mapping |
+| R09 | Rice | Evaluate optional disaster and seed datasets | To do | Medium | Include/exclude decision with temporal/geographic join evidence |
+| R10 | Rice | Select focus and suitable mining task | To do | High | Observation counts, target feasibility, baseline and validation rationale |
+| H06 | HVC | Decode 2024–2026 headers and inspect 2025 Excel | To do | High | Year-by-year canonical schema mapping |
+| H07 | HVC | Normalize commodity/province/month/variety/system grain | To do | High | Cross-year sample and reconciliation checks |
+| H08 | HVC | Test crop and metric consistency across years | To do | High | Coverage, units, blanks/dashes/zeros, duplicates documented |
+| H09 | HVC | Compare broad HVC vs cacao-focused studies | To do | High | Evidence-backed feasibility and task decision |
+| G03 | Shared | Confirm permission, confidentiality and public repo policy | To do | High | Only safe metadata/code/proposal text committed |
+| G04 | Shared | Define baseline, validation, metrics and leakage safeguards | To do | High | Pre-specified independently for both tracks |
+| P03 | Shared | Perform two separate rubric and checklist reviews | To do | High | Each proposal scores against all five rubric categories and 16 checklist items |
